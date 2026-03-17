@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Aarushi 🎂</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:Poppins;
+background:linear-gradient(120deg,#ff758c,#6a11cb);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+h1{
+font-family:Pacifico;
+font-size:65px;
+animation:zoom 1.5s;
+}
+
+/* 🔥 ANIMATED BUTTON */
+button{
+padding:18px 45px;
+font-size:22px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#ff1744,#ff9100);
+color:white;
+cursor:pointer;
+margin-top:30px;
+position:relative;
+overflow:hidden;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+button:hover{
+transform:scale(1.15) rotate(-2deg);
+box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
+
+button:active{
+transform:scale(.9);
+}
+
+button::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);
+transition:.6s;
+}
+
+button:hover::before{
+left:100%;
+}
+
+/* SURPRISE LETTER */
+#surprise{
+display:none;
+padding:100px 10%;
+min-height:100vh;
+background:linear-gradient(120deg,#ff512f,#dd2476);
+animation:fade 1.2s;
+}
+
+.letter{
+font-size:28px;
+max-width:800px;
+margin:auto;
+line-height:1.9;
+animation:slideUp 1.5s;
+}
+
+/* GALLERY */
+.gallery{
+padding:80px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#ffffff20;
+border-radius:20px;
+overflow:hidden;
+transition:.5s;
+animation:zoomCard 1.5s;
+}
+
+.card:hover{
+transform:scale(1.08);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+padding:30px;
+background:#00000040;
+}
+
+/* ANIMATIONS */
+@keyframes zoom{
+from{transform:scale(.3);opacity:0}
+to{transform:scale(1);opacity:1}
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes slideUp{
+from{transform:translateY(60px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
+
+@keyframes zoomCard{
+from{transform:scale(.7);opacity:0}
+to{transform:scale(1);opacity:1}
+}
+
+/* FLOATING HEARTS */
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+to{transform:translateY(-110vh);opacity:0}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>Happy Birthday Aarushi 🎂</h1>
+<p>My lovely sister ❤️</p>
+<button onclick="openSurprise()">🎁 Birthday Surprise</button>
+</div>
+
+<!-- HIDDEN LETTER -->
+<div id="surprise">
+<h1>🎉 Happy Birthday Aarushi 🎉</h1>
+
+<div class="letter">
+Dear Aarushi ❤️ <br><br>
+You are not just my sister, you are my best friend and biggest support 😄✨ <br><br>
+May your life be full of happiness, success and beautiful dreams 🌸💫 <br><br>
+Keep smiling always 😊 <br><br>
+— Your Brother Vishal ❤️
+</div>
+
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+<div class="card"><img src="p1.jpg"></div>
+<div class="card"><img src="p2.jpg"></div>
+<div class="card"><img src="p3.jpg"></div>
+</div>
+
+<footer>
+Made with ❤️ by Vishal
+</footer>
+
+<script>
+
+function openSurprise(){
+let s=document.getElementById("surprise");
+s.style.display="block";
+window.scrollTo({top:s.offsetTop,behavior:"smooth"});
+startHearts();
+}
+
+function startHearts(){
+setInterval(()=>{
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+},400);
+}
+
+</script>
+
+</body>
+</html>

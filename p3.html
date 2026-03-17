@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Anjali 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(120deg,#ff758c,#ff7eb3);
+      color:#fff;
+      overflow-x:hidden;
+    }
+    .hero{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      animation:fadeIn 2s ease;
+    }
+    .hero h1{
+      font-family:'Pacifico',cursive;
+      font-size:3.5rem;
+      animation:pop 1.5s ease;
+    }
+    .hero p{
+      margin-top:15px;
+      font-size:1.3rem;
+    }
+    section{padding:80px 10%;}
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:#ffffff20;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 15px 30px rgba(0,0,0,.3);
+      transform:scale(.8);
+      opacity:0;
+      animation:zoomIn 1s ease forwards;
+    }
+    .card img{width:100%;height:250px;object-fit:cover;}
+    .card h3{text-align:center;padding:10px;}
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#00000030;
+      font-size:1rem;
+    }
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+    @keyframes zoomIn{to{transform:scale(1);opacity:1}}
+
+    /* 📸 Instagram Style Layout */
+.insta-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.insta-card{
+  background:#ffffff15;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 12px 25px rgba(0,0,0,.3);
+  transition:.3s;
+}
+
+.insta-card:hover{
+  transform:translateY(-8px) scale(1.02);
+}
+
+.insta-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+}
+
+.insta-info{
+  padding:15px;
+  font-size:.95rem;
+}
+
+.insta-user{
+  font-weight:600;
+  margin-bottom:5px;
+}
+
+.insta-caption{
+  opacity:.9;
+}
+
+.insta-like{
+  margin-top:8px;
+  color:#ffccd5;
+}
+
+.hearts span{
+  position:fixed;
+  bottom:-10px;
+  font-size:24px;
+  animation:heartFloat 6s linear infinite;
+}
+
+.hearts span:nth-child(1){left:20%;}
+.hearts span:nth-child(2){left:40%;animation-duration:7s;}
+.hearts span:nth-child(3){left:60%;animation-duration:5s;}
+.hearts span:nth-child(4){left:80%;animation-duration:8s;}
+
+@keyframes heartFloat{
+  0%{transform:translateY(0) scale(0.5);opacity:1;}
+  100%{transform:translateY(-100vh) scale(1.3);opacity:0;}
+}
+
+.glow-text{
+  font-size:2.5rem;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0 0 5px #fff;}
+  to{text-shadow:0 0 20px #ff9ff3;}
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div>
+      <h1 class="glow-text">Happy Birthday Anjali 🎂</h1>
+
+      <p>Dear Anjali 💖<br>
+      You are not just special today, you are special every day 🌸<br>
+      May your life be filled with happiness, success & endless smiles 😊</p>
+    </div>
+  </div>
+
+  <section>
+    <h2 style="margin-bottom:20px;">A Special Message 💌</h2>
+    <p style="font-size:1.1rem;line-height:1.9;background:#ffffff25;padding:25px;border-radius:20px;">
+      Dear Anjali 💖,<br><br>
+    
+      Aaj tumhara birthday hai, lekin sach kahun to tumhari presence har din ko special bana deti hai 🌸.  
+      Tumhari smile ek aisi light hai jo bina kuch kahe bhi dil ko calm aur happy feel kara deti hai ✨.<br><br>
+    
+      Tum simple ho, sweet ho, aur bilkul real ho — aur shayad isi liye tum itni special lagti ho 💫.  
+      I hope tumhari life hamesha happiness, peace aur endless smiles se bhari rahe 😊.<br><br>
+    
+      Kabhi bhi khud par doubt mat karna, kyunki tum jaise ho, wahi kaafi ho.  
+      Just stay the same — kind, cute aur full of positive vibes 🌷.<br><br>
+    
+      <b>Happy Birthday once again, Anjali 🎂</b><br>
+      <span style="font-style:italic;">With lots of warmth & good wishes,<br>— From Vishal ❤️</span>
+    </p>
+    
+    <div class="hearts">
+      <span>❤️</span>
+      <span>💖</span>
+      <span>💕</span>
+      <span>💗</span>
+    </div>
+    
+
+    <div style="margin-top:40px;text-align:center;">
+      <h2>Because you love Shinchan 🧡</h2>
+      <img src="p1.jpg" alt="Cute Shinchan" style="margin-top:20px;width:250px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.4);">
+      <p style="margin-top:15px;font-size:1.1rem;">Stay cute & funny like Shinchan 😄✨</p>
+    </div>
+      
+  
+<div style="margin-top:70px;">
+    <h2 style="text-align:center;margin-bottom:30px;">
+        💖 Cute Memory Gallery 💕
+    </h2>
+  
+    <div class="insta-grid">
+  
+      <div class="insta-card">
+        <img src="p2.jpg" alt="insta1">
+        <div class="insta-info">
+          <div class="insta-user">anjali 💖</div>
+          <div class="insta-caption">Too cute to be real 🥹✨</div>
+          <div class="insta-like">❤️ 1,024 likes</div>
+        </div>
+      </div>
+  
+      <div class="insta-card">
+        <img src="p3.jpg" alt="insta2">
+        <div class="insta-info">
+          <div class="insta-user">anjali 🌸</div>
+          <div class="insta-caption">My favorite smile 😊</div>
+          <div class="insta-like">❤️ 2,311 likes</div>
+        </div>
+      </div>
+  
+      <div class="insta-card">
+        <img src="p4.jpg" alt="insta3">
+        <div class="insta-info">
+          <div class="insta-user">anjali 👑</div>
+          <div class="insta-caption">Queen vibes only 💫</div>
+          <div class="insta-like">❤️ 3,879 likes</div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Vishal, specially for Anjali 🌷</p>
+  </footer>
+
+</body>
+</html>
